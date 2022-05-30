@@ -4,12 +4,11 @@
   "description": "Blockchain bare-bones",
   "main": "src/index.js",
   "scripts": {
-    "test1": "echo \"Error: no test specified\" && exit 1",
-    "test": "jest --watchAll",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "nodeA": "nodemon --watch src -e js src/blockchainNode.js 4001 http://localhost:4001",
     "nodeB": "nodemon --watch src -e js src/blockchainNode.js 4002 http://localhost:4002",
-    "nodeC": "nodemon --watch src -e js src/blockchainNode.js 4003 http://localhost:4003",
-    "lint": "eslint src/*"
+    "nodeC": "nodemon --watch src -e js src/blockchainNode.js 4003 http://localhost:4003"
   },
   "repository": {
     "type": "git",
